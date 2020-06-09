@@ -1,4 +1,5 @@
 import React from "react";
+import "./color-title.css";
 
 function colorTitle() {
   return (

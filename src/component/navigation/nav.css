@@ -1,0 +1,38 @@
+.blog-logo {
+  font-size: xx-large;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 0;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 4%;
+  max-width: 1000px;
+}
+.navbar {
+  text-decoration: none;
+  float: right;
+}
+.nav-menus-wrap {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.nav-menus-group {
+  float: left;
+}
+.menus-title {
+  display: block;
+  text-align: center;
+  margin: 10px 5px;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-weight: 0.2s;
+  border-radius: 20px;
+  transition: ease-in-out 0.2s;
+}
+.menus-title:hover {
+  background-color: #e9ecef;
+  transition: ease-in-out 0.2s;
+}
