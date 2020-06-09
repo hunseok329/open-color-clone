@@ -1,14 +1,12 @@
 import React from "react";
 
-function ColorSample() {
+function ColorSample(props) {
+  console.log(props);
+  var aClass = "shortcut " + props.sampleName;
   return (
-    <div className="shortcut-wrap">
-      <ul className="shortcut-menus">
-        <li>
-          <a className="shortcut"></a>
-        </li>
-      </ul>
-    </div>
+    <li>
+      <a className={aClass}>{props.sampleName}</a>
+    </li>
   );
 }
 
