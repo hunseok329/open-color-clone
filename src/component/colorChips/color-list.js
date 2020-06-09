@@ -1,6 +1,5 @@
 import React from "react";
 import ColorGroup from "./color-group";
-import ColorSample from "./color-sample";
 
 function ColorList(props) {
   return (
@@ -17,6 +16,16 @@ function renderSample(sample) {
 }
 function renderColor(color) {
   return <ColorGroup name={color.name} colorsChip={color.chips}></ColorGroup>;
+}
+
+function ColorSample(props) {
+  console.log(props);
+  var aClass = "shortcut " + props.sampleName;
+  return (
+    <li>
+      <a className={aClass}>{props.sampleName}</a>
+    </li>
+  );
 }
 
 export default ColorList;
