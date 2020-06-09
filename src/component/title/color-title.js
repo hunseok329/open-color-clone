@@ -1,6 +1,7 @@
 import React from "react";
 import "./color-title.css";
 
+//Make "colorTitle"
 function colorTitle() {
   return (
     <div className="container">

@@ -1,6 +1,7 @@
 import React from "react";
 import "./nav.css";
 
+//Make navigation var
 function colorNav() {
   return (
     <div className="navigation">

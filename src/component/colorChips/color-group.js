@@ -1,5 +1,6 @@
 import React from "react";
 
+//Make a standard color table
 function ColorGroup(props) {
   return (
     <section className="color-wrap">
@@ -13,6 +14,7 @@ function ColorGroup(props) {
   );
 }
 
+//Make color chips
 function ColorChips(props) {
   return (
     <div className="color-chips">
@@ -21,6 +23,7 @@ function ColorChips(props) {
   );
 }
 
+//Make one chip out of "ColorChips"
 function ColorChip(props) {
   return (
     <div className="color-chip">
