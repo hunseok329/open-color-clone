@@ -1,10 +1,16 @@
 .shortcut-wrap {
   list-style: none;
+  padding: 20px 0;
 }
 .shortcut-menus {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
-
+.shortcut-wrap ul {
+  height: 100px;
+}
 .shortcut-wrap a.shortcut {
   display: block;
   padding: 6px 0;
