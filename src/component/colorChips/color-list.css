@@ -1,0 +1,21 @@
+.shortcut-wrap {
+  list-style: none;
+}
+.shortcut-menus {
+  list-style: none;
+}
+
+.shortcut-wrap a.shortcut {
+  display: block;
+  padding: 6px 0;
+  width: 100%;
+  font-size: 14px;
+  color: #868e96;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.2s ease-out;
+}
+a {
+  text-decoration: none;
+}
