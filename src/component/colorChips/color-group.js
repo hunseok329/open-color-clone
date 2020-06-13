@@ -1,15 +1,16 @@
 import React from "react";
+import styled from "styled-components";
+import "./color-group.css";
 
 //Make a standard color table
 function ColorGroup(props) {
+  console.log(props);
   return (
-    <section className="color-wrap">
-      <section className="color-group" id={props.name}>
-        <h3 className="color-title">{props.name}</h3>
-        <div className="color-chips-wrap">
-          <ColorChips name={props.name} chips={props.colorsChip}></ColorChips>
-        </div>
-      </section>
+    <section className="color-group" id={props.name}>
+      <h3 className="color-title">{props.name}</h3>
+      <div className="color-chips-wrap">
+        <ColorChips name={props.name} chips={props.colorsChip}></ColorChips>
+      </div>
     </section>
   );
 }
@@ -27,12 +28,12 @@ function ColorChips(props) {
 function ColorChip(props) {
   var contnet = [];
   for (let i = 0; i < 10; i++) {
-    var cc = props.name + " " + String(i);
+    var cc = props.name + "-" + String(i);
     var ccb = "color-chip-bg " + ("bg-" + cc);
     contnet.push(
       <div className="color-chip" id={cc}>
-        <div className={ccb}></div>
-        <div className="color-name">{cc}</div>
+        <Background className={ccb} color={props.chips[i]}></Background>
+        <div className="color-name">{props.name + " " + i}</div>
         <input
           className="color-hex"
           type="text"
@@ -45,4 +46,8 @@ function ColorChip(props) {
   return contnet;
 }
 
+const Background = styled.div`
+  height: 80px;
+  background-color: ${(props) => props.color};
+`;
 export default ColorGroup;

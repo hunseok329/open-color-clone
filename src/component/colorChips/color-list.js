@@ -5,14 +5,16 @@ import "./color-list.css";
 
 //Sum all the values and return "ColorList"
 function ColorList(props) {
-  console.log(props);
   return (
     <div className="container">
       <div className="row">
         <div className="shortcut-wrap">
           <ul className="shortcut-menus">{props.allColor.map(renderSample)}</ul>
         </div>
-        {props.allColor.map(renderColor)}
+        <section className="color-wrap">
+          {/* Call color-group tag */}
+          {props.allColor.map(renderColor)}
+        </section>
       </div>
     </div>
   );
@@ -21,7 +23,6 @@ function ColorList(props) {
 //Take a "name" from "AllColor" and give it to ColorSample
 function renderSample(props) {
   return (
-    // <ColorSample sampleName={props.name} color={props.chips[1]}></ColorSample>
     <ColorSample sampleName={props.name} color={props.chips[7]}></ColorSample>
   );
 }
