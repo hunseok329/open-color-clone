@@ -1,3 +1,31 @@
+.color-group {
+  padding-top: 40px;
+}
 .color-chips {
-  width: 20%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.color-chip {
+  max-width: 100%;
+  padding: 0 2px;
+  /* margin: auto; */
+}
+.color-chip-bg {
+  width: 100%;
+  border-radius: 2px;
+}
+.color-title {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 30px;
+}
+.color-name {
+  text-transform: uppercase;
+}
+.color-hex {
+  border: 0;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  color: #868e96;
 }

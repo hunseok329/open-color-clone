@@ -28,11 +28,11 @@ function ColorChips(props) {
 function ColorChip(props) {
   var contnet = [];
   for (let i = 0; i < 10; i++) {
-    var cc = props.name + "-" + String(i);
-    var ccb = "color-chip-bg " + ("bg-" + cc);
+    var colorChip = props.name + "-" + String(i);
+    var colorChipBg = "color-chip-bg " + ("bg-" + colorChip);
     contnet.push(
-      <div className="color-chip" id={cc}>
-        <Background className={ccb} color={props.chips[i]}></Background>
+      <div className="color-chip" id={colorChip}>
+        <Background className={colorChipBg} color={props.chips[i]}></Background>
         <div className="color-name">{props.name + " " + i}</div>
         <input
           className="color-hex"
