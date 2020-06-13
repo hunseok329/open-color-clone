@@ -5,6 +5,7 @@ import "./color-list.css";
 
 //Sum all the values and return "ColorList"
 function ColorList(props) {
+  console.log(props);
   return (
     <div className="container">
       <div className="row">
@@ -20,10 +21,8 @@ function ColorList(props) {
 //Take a "name" from "AllColor" and give it to ColorSample
 function renderSample(props) {
   return (
-    <ColorSample
-      sampleName={props.name}
-      color={props.chips.chip7}
-    ></ColorSample>
+    // <ColorSample sampleName={props.name} color={props.chips[1]}></ColorSample>
+    <ColorSample sampleName={props.name} color={props.chips[7]}></ColorSample>
   );
 }
 
