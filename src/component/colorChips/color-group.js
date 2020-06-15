@@ -4,7 +4,6 @@ import "./color-group.css";
 
 //Make a standard color table
 function ColorGroup(props) {
-  console.log(props);
   return (
     <section className="color-group" id={props.name}>
       <h3 className="color-title">{props.name}</h3>

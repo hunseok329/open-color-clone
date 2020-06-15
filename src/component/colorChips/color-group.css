@@ -9,7 +9,7 @@
 .color-chip {
   max-width: 100%;
   padding: 0 2px;
-  /* margin: auto; */
+  margin-bottom: 50px;
 }
 .color-chip-bg {
   width: 100%;

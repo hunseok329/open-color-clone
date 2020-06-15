@@ -5,6 +5,7 @@ import "./color-list.css";
 
 //Sum all the values and return "ColorList"
 function ColorList(props) {
+  console.log(props);
   return (
     <div className="container">
       <div className="row">
